@@ -23,10 +23,22 @@ namespace TutorialExploreCalifornia
         {
             loggerFactory.AddConsole();
 
+            // Error Handling Middleware for Production Env
+            app.UseExceptionHandler("/error.html");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // Code purposeful for error
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Path.Value.Contains("invalid"))
+                    throw new Exception("Error!");
+
+                await next();
+            });
 
             app.UseFileServer();
         }
