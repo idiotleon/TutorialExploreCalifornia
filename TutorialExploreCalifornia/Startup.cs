@@ -67,7 +67,7 @@ namespace TutorialExploreCalifornia
             app.UseMvc(routes =>
             {
                 routes.MapRoute("Default",
-                    "{controler=Home}/{action=Index}/{id?}"
+                    "{controller=Home}/{action=Index}/{id?}"
                     );
             });
 
