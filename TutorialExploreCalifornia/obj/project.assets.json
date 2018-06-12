@@ -4590,7 +4590,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.0.2": {
-      "sha512": "fRHBvQs9Z/ZSUAqaSotK1UPol/lwybTgdeTXR4eVw3rVDgzUnWGTUsK0A418oR7NrimNL1TQu/IM0RDa26s0qg==",
+      "sha512": "NClg86IOmvExcc1DnyCWmzrnkUg7d8wls6TCDo2rOheUqs2T3qM4XVRsZg3Icmy3YONhxmTFwLHtp76M9m1QfQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.0.2",
       "files": [
@@ -9362,28 +9362,23 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project\\ASPNETCore\\TutorialExploreCalifornia\\TutorialExploreCalifornia\\TutorialExploreCalifornia.csproj",
+      "projectUniqueName": "C:\\Project\\TutorialExploreCalifornia\\TutorialExploreCalifornia\\TutorialExploreCalifornia.csproj",
       "projectName": "TutorialExploreCalifornia",
-      "projectPath": "C:\\Project\\ASPNETCore\\TutorialExploreCalifornia\\TutorialExploreCalifornia\\TutorialExploreCalifornia.csproj",
+      "projectPath": "C:\\Project\\TutorialExploreCalifornia\\TutorialExploreCalifornia\\TutorialExploreCalifornia.csproj",
       "packagesPath": "C:\\Users\\yanglu\\.nuget\\packages\\",
-      "outputPath": "C:\\Project\\ASPNETCore\\TutorialExploreCalifornia\\TutorialExploreCalifornia\\obj\\",
+      "outputPath": "C:\\Project\\TutorialExploreCalifornia\\TutorialExploreCalifornia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\yanglu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp1.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
-        "https://1essharedassets.pkgs.visualstudio.com/_packaging/Kusto/nuget/v3/index.json": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://skype.pkgs.visualstudio.com/_packaging/csc/nuget/v3/index.json": {},
-        "https://skype.pkgs.visualstudio.com/_packaging/tps/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp1.0": {

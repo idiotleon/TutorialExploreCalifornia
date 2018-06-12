@@ -2,23 +2,31 @@
 
 namespace TutorialExploreCalifornia.Controllers
 {
+    [Route("blog")]
     public class BlogController : Controller
     {
+        [Route("")]
         public IActionResult Index()
         {
-            return new ContentResult { Content = "Blog Posts" };
+            return new ContentResult {
+                Content = "Blog Posts"
+            };
         }
 
-        public IActionResult Post(int? id)
+        [Route("{year:min(2000)}/{month:range(1,12)}/{key}")]
+        public IActionResult Post(
+            int year,
+            int month,
+            string key)
         {
-            if (id == null)
+            return new ContentResult
             {
-                return new ContentResult { Content = "null" };
-            }
-            else
-            {
-                return new ContentResult { Content = id.ToString() };
-            }
+                Content = string.Format(
+                    "Year: {0}; Month: {1}; Key: {2}",
+                    year,
+                    month,
+                    key)
+            };
         }
     }
 }
